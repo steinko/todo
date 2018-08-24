@@ -1,6 +1,16 @@
 describe('Test imput form', ()=>{
+  beforeEach(() => {
+    cy.visit('/')
+  })
   it('Focuses input form on load',() => {
-      cy.visit('http://localhost:3030')
+     
+      cy.focused().should('have.class','new-todo')
 
+  })
+  xit('accepts input',() => {
+      const typeText = 'buy milk'
+      cy.get('.new-todo')
+      .type(typeText)
+      .should('have.value', typeText)
   })
 })
