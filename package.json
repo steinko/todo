@@ -7,7 +7,9 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "serve": "json-server db.json",
-    "dev": "concurrently \"npm run watch\" \"npm run serve\""
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
   },
   "keywords": [],
   "author": "",
