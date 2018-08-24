@@ -24,9 +24,10 @@ install:
 - npm i  -D nyc 
 - npm i  -D cypress-eslint-preprocessor 
 - npm i  -D eslint 
+- npm audit fix
 
 before_script:
-- npm run dev -- --silent &
+- npm run dev &
 
 script:
 - npm run cypress:run
