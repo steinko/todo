@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+- lts/*
+ addons:
+  sonarcloud: 
+   install:
+  - npm i axios
+  - npm i concurrently
+  - npm i json-server
+  - npm i react
+  - npm i react-router-dom
+  - npm i -D babel-core
+  - npm i -D babel-loader
+  - npm i -D babel-plugin-transform-object-rest-spread
+  - npm i -D babel-preset-env
+  - npm i -D babel-preset-react
+  - npm i -D css-loader
+  - npm i -D cypress"
+  - npm i -D html-webpack-plugin
+  - npm i -D style-loader
+  - npm i -D webpack
+  - npm i  -D nyc 
+  - npm i  -D cypress-eslint-preprocessor 
+  - npm i  -D eslint 
+   before_script:
+  - npm run dev
+   script:
+  - npm run cypress:run
+  - sonar-scanner   -Dsonar.projectKey=timer   -Dsonar.organization=steinko-github   -Dsonar.sources=./src   -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login=7658edeb2b312864ba1605433ea98e74f2a6aaa2  
