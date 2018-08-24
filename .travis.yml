@@ -21,9 +21,10 @@ install:
 - npm i -D html-webpack-plugin
 - npm i -D style-loader
 - npm i -D webpack
-- npm i  -D nyc 
-- npm i  -D cypress-eslint-preprocessor 
-- npm i  -D eslint 
+- npm i -D nyc
+- npm i -D istanbul-instrumenter-loader 
+- npm i -D cypress-eslint-preprocessor 
+- npm i -D eslint 
 #- npm audit fix
 
 before_script:
