@@ -26,7 +26,7 @@ install:
 - npm i  -D eslint 
 
 before_script:
-- npm run dev
+- npm run dev -- --silent &
 
 script:
 - npm run cypress:run
