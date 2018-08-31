@@ -33,4 +33,4 @@ before_script:
 
 script:
 - npm run cypress:run
-- sonar-scanner   -Dsonar.projectKey=todo   -Dsonar.organization=steinko-github   -Dsonar.sources=./src   -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login= 38673b4c56b1501153d8e047212a085951c0b04b  -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+- sonar-scanner   -Dsonar.projectKey=todo   -Dsonar.organization=steinko-github   -Dsonar.sources=./src   -Dsonar.host.url=https://sonarcloud.io  -Dsonar.login=7658edeb2b312864ba1605433ea98e74f2a6aaa2
