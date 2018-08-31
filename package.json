@@ -20,7 +20,9 @@
     "dev": "concurrently \"npm run watch\" \"npm run serve\"",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "flow": "flow"
+    "flow": "flow",
+    "nyc": "nyc"
+
   },
   "keywords": [],
   "author": "",
