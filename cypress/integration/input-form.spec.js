@@ -7,7 +7,7 @@ describe('Test imput form', ()=>{
       cy.focused().should('have.class','new-todo')
 
   })
-  xit('accepts input',() => {
+  it('accepts input',() => {
       const typeText = 'buy milk'
       cy.get('.new-todo')
       .type(typeText)
