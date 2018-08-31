@@ -23,6 +23,7 @@ install:
 - npm i -D webpack
 - npm i -D nyc
 - npm i -D istanbul-instrumenter-loader 
+- npm i -D istanbul-lib-coverage
 - npm i -D cypress-eslint-preprocessor 
 - npm i -D eslint 
 #- npm audit fix
@@ -32,4 +33,4 @@ before_script:
 
 script:
 - npm run cypress:run
-- sonar-scanner   -Dsonar.projectKey=todo   -Dsonar.organization=steinko-github   -Dsonar.sources=./src   -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login=7658edeb2b312864ba1605433ea98e74f2a6aaa2  -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+- sonar-scanner   -Dsonar.projectKey=todo1   -Dsonar.organization=steinko-github   -Dsonar.sources=./src   -Dsonar.host.url=https://sonarcloud.io  -Dsonar.login=b0c0d7ce4ab856b9ebc10a2a6548fa7c58eecc8e

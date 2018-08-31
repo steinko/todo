@@ -18,6 +18,7 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
 const istanbul = require('istanbul-lib-coverage');
 
 const map = istanbul.createCoverageMap({});
@@ -39,6 +40,6 @@ after(() => {
     }
 
     cy.writeFile('.nyc_output/out.json', JSON.stringify(map));
-    cy.exec('nyc report --reporter=lcovonly');
+   // cy.exec('nyc report --reporter=lcovonly');
   });
 });
