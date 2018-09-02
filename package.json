@@ -18,7 +18,7 @@
     "watch": "webpack --watch",
     "serve": "json-server db.json",
     "dev": "concurrently \"npm run eslint ./src/*.js\"  \"npm run watch\" \"npm run serve\"",
-    "cypress:run": "cypress run",
+    "cypress:run": "cypress run --record --key 5da4677a-8709-4369-b8e2-23e9b300bf2b",
     "cypress:open": "cypress open",
     "flow": "flow",
     "nyc": "nyc",
