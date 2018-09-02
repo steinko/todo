@@ -1,7 +1,9 @@
+/* eslint-disable */
 import React from 'react'
+/* eslint-enable */
 
-export default props  =>
-  <form>
+export default props =>
+  <form onSubmit = {props.handleTodoSubmit} >
     <input
       type='text'
       autoFocus

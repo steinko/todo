@@ -1,5 +1,7 @@
+/* eslint-disable */
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+/* eslint-enable */
 
 export default props =>
   <footer className="footer">
