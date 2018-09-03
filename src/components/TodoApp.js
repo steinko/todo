@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import TodoForm from './TodoForm'
 import TodoList from './TodoList'
 import Footer from './Footer'
-import { saveTodo } from '../lib/service'
+import { saveTodo, loadTodos } from '../lib/service'
 /* eslint-enable */
 
 export default class TodoApp extends Component {
@@ -24,6 +24,11 @@ export default class TodoApp extends Component {
     this.setState({ currentTodo: evt.target.value })
   }
 
+  componentWillMount () {
+    loadTodos()
+      .then(({data}) => this.setState({todos: data  }))
+      .catch(() => this.setState({ error: true }))
+ }
   handleTodoSubmit (evt) {
     evt.preventDefault()
     const newTodo = { name: this.state.currentTodo, isComplete: false }

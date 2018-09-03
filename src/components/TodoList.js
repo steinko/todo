@@ -3,9 +3,10 @@ import React from 'react'
 
 const TodoItem = props =>
 /* eslint-enable */
-  <li>
+  <li className={props.isComplete ? "completed" : null} >
     <div className="view">
-      <input className="toggle" type="checkbox" />
+      <input className="toggle" type="checkbox" 
+        checked= {props.isComplete} />
       <label>
         {props.name}
       </label>
