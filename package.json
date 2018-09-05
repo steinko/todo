@@ -17,7 +17,7 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start \"  \"npm run serve\"",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build": "webpack",
@@ -31,6 +31,7 @@
     "eslint": "eslint",
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server"
+  
   },
   "keywords": [],
   "author": "",

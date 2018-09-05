@@ -43,15 +43,15 @@ script:
 - npm run cypress:run
 - sonar-scanner   -Dsonar.projectKey=todo1   -Dsonar.organization=steinko-github   -Dsonar.sources=./src   -Dsonar.host.url=https://sonarcloud.io  -Dsonar.login=b0c0d7ce4ab856b9ebc10a2a6548fa7c58eecc8e
 
-## deploy:
-##   provider: cloudfoundry
-#   username: stein_korsveien@msn.com
-#   password: DavidBowie1!
-#  api: https://api.run.pivotal.io
-#  organization: stein
-#  space: development
-#  on:
-#    branch: release
+deploy:
+  provider: cloudfoundry
+  username: stein_korsveien@msn.com
+  password: DavidBowie1!
+  api: https://api.run.pivotal.io
+  organization: stein
+  space: development
+  on:
+    branch: release
 
 #deploy:
 #  provider: releases
