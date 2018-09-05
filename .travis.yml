@@ -37,7 +37,7 @@ install:
 #- npm audit fix
 
 before_script:
-- npm run dev &
+- npm start &
 
 script:
 - npm run cypress:run
