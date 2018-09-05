@@ -17,20 +17,15 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start \"  \"npm run serve\"",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "build": "webpack",
-    "watch": "webpack --watch",
     "serve": "json-server db.json",
-    "dev": "concurrently \"npm run eslint ./src/*.js\"  \"npm run watch\" \"npm run serve\"",
     "cypress:run": "cypress run --record --key 5da4677a-8709-4369-b8e2-23e9b300bf2b",
     "cypress:open": "cypress open",
     "flow": "flow",
     "nyc": "nyc",
-    "eslint": "eslint",
-    "webpack": "webpack",
-    "webpack-dev-server": "webpack-dev-server"
+    "eslint": "eslint"
   },
   "keywords": [],
   "author": "",
