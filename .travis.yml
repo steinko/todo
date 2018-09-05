@@ -51,7 +51,7 @@ deploy:
   organization: stein
   space: development
   on:
-    branch: release
+    branch: master
 
 #deploy:
 #  provider: releases
