@@ -1,8 +1,8 @@
-describe('Test imput form', () => {
+describe('imput form', () => {
   beforeEach(() => {
     cy.seedAndVisit([])
   })
-  it('Focuses input form on load', () => {
+  it('should focuse input form on load', () => {
     cy.focused().should('have.class', 'new-todo')
   })
 
